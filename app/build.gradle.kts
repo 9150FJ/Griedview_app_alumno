@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.cifpceuta.griedview_app_alumno"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.cifpceuta.griedview_app_alumno"
         minSdk = 26
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
