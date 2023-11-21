@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -25,5 +26,14 @@ public class Activity_Chat extends AppCompatActivity {
 
         chat = (TextView) findViewById(R.id.nombre);
         portada = (ImageView) findViewById(R.id.portada);
+
+        portada.setImageResource(imagenAvatar);
+        chat.setText(nombre);
     }
+
+    public void volver(View view){
+        Intent i = new Intent(this,MainActivity.class);
+        startActivity(i);
+    }
+
 }

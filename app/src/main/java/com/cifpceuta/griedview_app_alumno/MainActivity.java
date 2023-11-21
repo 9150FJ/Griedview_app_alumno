@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Alumno alumnos = (Alumno) adapterAlumnos.getItem(position);
                 Toast.makeText(view.getContext(), "Alumno: " + alumnos.getNombre(), Toast.LENGTH_LONG).show();
-                intent(view, position);
+                intentD(view, position);
+
             }
         });
 
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void intent(View view, int position) {
+    public void intentD(View view, int position) {
         Intent i = new Intent(this, Activity_Chat.class); //Falta crear un xml chat
         i.putExtra("portada", adapterAlumnos.getItem(position).getImagenAlumno());
         i.putExtra("nombre", adapterAlumnos.getItem(position).getNombre());

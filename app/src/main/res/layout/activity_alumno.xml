@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".Activity_Alumno">
+    tools:context=".Alumno">
 
     <ImageView
         android:id="@+id/imagenAlumno"
